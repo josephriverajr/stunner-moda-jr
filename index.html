@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="modal.css" type="text/css" />
+		<title>Modal</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Your Subscriptions</h1>
+			<table>
+				<thead>
+					<tr>
+						<th>Subscription</th>
+						<th>Next Rebill</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>$49.99 per month</td>
+						<td>December 13, 2020</td>
+						<td>
+							<div id="status-container">
+								<button class="btn-cancel" onclick="toggleModal(true)">Cancel</button>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="modal-container" id="showModal" style="display: none;">
+			<div class="modal-body" id="modalBody">
+				<p >Are you sure you want to cancel your subscription?</p>
+				<div class="flex justify-between">
+					<button class="btn-no" onclick="toggleModal(false)">No</button>
+					<button class="btn-yes" onclick="cancelledBtn()">Yes - Cancel </button>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<script type="text/javascript" src="modal.js"></script>
+		</footer>
+	</body>
+</html>

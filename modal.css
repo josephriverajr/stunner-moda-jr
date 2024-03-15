@@ -1,0 +1,88 @@
+html, body {
+	background: #000;
+	color: #fff;
+	font-family: "Arial", sans-serif;
+}
+
+.container {
+	width: 800px;
+	margin: 0 auto;
+}
+
+table {
+	border: 0;
+}
+
+th {
+	font-weight: bold;
+	background: #222;
+	padding: 5px 10px;
+}
+
+td {
+	padding: 10px 20px;
+	border: 1px solid #222;
+}
+
+button {
+	display: inline-block;
+	padding: 5px 10px;
+	border-radius: 5px; 
+	cursor: pointer;
+}
+
+.btn-cancel{ 
+	cursor: pointer;
+	background-color: transparent;
+	color: #fff;
+	border: 0px solid;
+}
+
+/* flex - styles - start */
+.flex {
+    display: flex;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+/* flex - styles - end */
+
+/* modal - styles - start */
+.modal-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 20%; 
+    position: relative;
+	transition: all 0.5s ease;
+	opacity: 0;
+}
+
+.modal-body {
+    position: absolute;
+    border: 1px solid #ffffff69;
+    padding: 2% 3.5%; 
+    border-radius: 5px;
+    width: 100%;
+	transition: all 0.5s ease;
+}
+.modal-open .container{
+	opacity: 0.3;
+}
+
+.btn-no {
+	color: #fff;
+	border: 0px;
+	background: rgb(42, 42, 43);
+}
+
+.btn-yes {
+	color: #fff;
+	border: 0px;
+	background: rgb(222, 131, 131);
+}
+
+/* modal - styles - end */
+
+
